@@ -1,13 +1,47 @@
-En este proyecto, se ha trabajado con un conjunto de datos proporcionado por Instacart, una plataforma de entregas de comestibles que permite a los clientes realizar pedidos para su entrega, similar a otros servicios como Uber Eats y DoorDash. Este conjunto de datos, lanzado públicamente en 2017 para una competición en Kaggle, ha sido modificado para adaptarse a los objetivos del proyecto. Se ha reducido su tamaño para agilizar los cálculos y se han introducido valores ausentes y duplicados, manteniendo las distribuciones originales de los datos.
+Descripción del Proyecto: Análisis de Datos de Instacart
 
-El objetivo principal del proyecto ha sido limpiar los datos y elaborar un informe detallado sobre los hábitos de compra de los clientes de Instacart. Para alcanzar este objetivo, se realizaron las siguientes actividades:
+Objetivo del Proyecto
 
-    Limpieza de Datos: Se identificaron y trataron valores ausentes y duplicados en el conjunto de datos. Este proceso incluyó la revisión y corrección de inconsistencias para asegurar la calidad de los datos.
+El objetivo de este proyecto es analizar los datos de la plataforma de entrega de comestibles Instacart para entender mejor los hábitos de compra de sus clientes. A través de un análisis exploratorio de datos, se busca identificar patrones de comportamiento, preferencias de productos y el impacto de variables como el día de la semana y la hora del día en los pedidos.
+Datasets Utilizados
 
-    Análisis Exploratorio: Se llevó a cabo un análisis exploratorio de los datos para comprender las tendencias y patrones en los hábitos de compra. Esto incluyó la visualización de datos a través de gráficos que ilustran la distribución de los pedidos a lo largo del día y la semana.
+El proyecto utilizará los siguientes conjuntos de datos:
 
-    Creación de Gráficos: Se crearon gráficos para comunicar de manera efectiva los resultados del análisis. Cada gráfico se tituló adecuadamente, se etiquetaron los ejes y se incluyó una leyenda cuando fue necesario. Se utilizó plt.show() para visualizar cada gráfico en el Jupyter notebook.
+    instacart_orders.csv: Contiene información sobre cada pedido realizado en Instacart.
+    products.csv: Lista de productos disponibles para compra.
+    order_products.csv: Relación entre los pedidos y los productos solicitados.
+    aisles.csv: Categorías de productos en los pasillos del supermercado.
+    departments.csv: Departamentos a los que pertenecen los productos.
 
-    Elaboración del Informe: Se preparó un informe detallado en el Jupyter notebook, donde se respondieron preguntas clave sobre los hábitos de compra de los clientes. Se proporcionaron explicaciones breves y claras para cada resultado obtenido, facilitando la interpretación de los datos.
+Metodología
 
-Este enfoque permitió obtener una visión integral de los patrones de compra en Instacart, proporcionando información valiosa para comprender mejor el comportamiento de los clientes y tomar decisiones basadas en datos.
+El análisis se llevará a cabo en varias etapas:
+
+    Descripción de los Datos: Exploración inicial para entender la estructura y calidad de los datos. Se identificarán valores ausentes y duplicados, y se analizarán las características generales de cada conjunto de datos.
+
+    Preprocesamiento de los Datos:
+        Verificación de tipos de datos para asegurarse de que son apropiados (por ejemplo, ID como enteros).
+        Identificación y tratamiento de valores ausentes y duplicados. Se explicará la metodología utilizada para completar o eliminar estos valores y la razón detrás de estas decisiones.
+
+    Análisis Exploratorio de Datos (AED):
+        Visualización de Datos: Creación de gráficos para mostrar patrones, como el número de pedidos por hora del día, la distribución de pedidos según el día de la semana, y la espera entre pedidos.
+        Comparaciones: Análisis de la diferencia en las distribuciones de pedidos en días específicos y la identificación de los productos más populares.
+
+Tecnologías Utilizadas
+
+    Python: Lenguaje de programación principal utilizado para la manipulación y análisis de datos.
+    Pandas: Biblioteca esencial para la gestión y análisis de datos en forma de DataFrames. Permite realizar operaciones de limpieza, transformación y agregación de datos.
+    NumPy: Biblioteca utilizada para trabajar con arreglos y realizar cálculos numéricos eficientes.
+    Matplotlib: Biblioteca de visualización que permite crear gráficos y representar datos de manera clara y efectiva.
+    Seaborn: Biblioteca complementaria para Matplotlib, que facilita la creación de gráficos estadísticos atractivos y complejos.
+    Jupyter Notebooks: Entorno interactivo que permite realizar análisis exploratorios de datos de manera dinámica y documentada.
+
+Resultados Esperados
+
+    Visualizaciones que ilustren claramente el comportamiento de compra de los clientes.
+    Identificación de productos que se piden con frecuencia y aquellos que se reordenan.
+    Comprensión de cómo los clientes interactúan con la plataforma en función de factores temporales.
+
+Conclusiones
+
+Este proyecto no solo proporcionará información valiosa sobre los hábitos de compra de los clientes de Instacart, sino que también servirá como una experiencia práctica en la aplicación de técnicas de análisis de datos y visualización. Los resultados de este análisis podrían tener implicaciones para estrategias de marketing y optimización de inventario en la plataforma.
